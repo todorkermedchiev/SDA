@@ -3,19 +3,19 @@
 
 using namespace std;
 
-int findGreaterPowerOfTwo(int number) {
-    if (number <= 0) {
-        return 0;
-    }
+// int findGreaterPowerOfTwo(int number) {
+//     if (number <= 0) {
+//         return 0;
+//     }
 
-    int result = 1;
+//     int result = 1;
 
-    while (result < number) {
-        result *= 2;
-    }
+//     while (result < number) {
+//         result *= 2;
+//     }
 
-    return result;
-}
+//     return result;
+// }
 
 int main() {
     int count;
@@ -25,8 +25,9 @@ int main() {
     set<int> s;
     for (int i = 0; i < count; ++i) {
         cin >> current;
-        int greater = findGreaterPowerOfTwo(current);
-        for (int j = 0; j <= greater; ++j) {
+        // int greater = findGreaterPowerOfTwo(current);
+        // for (int j = 0; j <= greater; ++j) {
+        for (int j = 0; j <= current; ++j) {
             if ((current | j) == current) {
                 s.insert(j);
             }

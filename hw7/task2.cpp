@@ -7,7 +7,6 @@
 #include <queue>
 using namespace std;
 
-
 int main() {
     int queriesCount;
     cin >> queriesCount;
@@ -44,4 +43,3 @@ int main() {
 
     return 0;
 }
-
